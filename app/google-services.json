@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808288319572",
+    "project_id": "vegefresh-ae670",
+    "storage_bucket": "vegefresh-ae670.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808288319572:android:8cc21e9efee629eb4055c1",
+        "android_client_info": {
+          "package_name": "com.example.vegefresh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnYyvhAkB0VGg9eoZxLmExmozfF9kcImo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

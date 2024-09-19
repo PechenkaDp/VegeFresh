@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:minWidth="120dp"
+        android:text="← Back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inria_sans_light"
+        android:text="Redact your data"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:layout_below="@+id/backButton" />
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter phone"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/titleText"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Phone"
+
+        android:inputType="phone"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/phoneLabel" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter email"
+        android:fontFamily="@font/inria_sans_light"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/phoneNumber"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/emailLabel" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter name"
+        android:fontFamily="@font/inria_sans_light"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Name"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/nameLabel" />
+
+    <TextView
+        android:id="@+id/surnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter surname"
+        android:fontFamily="@font/inria_sans_light"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/name"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Surname"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/surnameLabel" />
+
+    <TextView
+        android:id="@+id/secondNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter second name"
+        android:fontFamily="@font/inria_sans_light"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/surname"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/secondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Second name"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/secondNameLabel" />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter address"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/secondName"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Address"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/addressLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="Apply"
+        android:textColor="@android:color/white"
+        android:minWidth="370dp"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/address" />
+
+</RelativeLayout>

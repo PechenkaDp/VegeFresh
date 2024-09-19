@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_back"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvAuthorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authorization"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/tvEnterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Email"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tvAuthorization"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/tvEnterEmail"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <TextView
+        android:id="@+id/tvEnterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your password"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:fontFamily="@font/inria_sans_light"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/tvEnterPassword"
+        android:paddingStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/edit_text_background"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I forgot password"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/grey"
+        android:textSize="18sp"/>
+</RelativeLayout>

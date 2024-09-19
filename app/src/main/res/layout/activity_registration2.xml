@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvRedactData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your data to continue"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:fontFamily="@font/inria_sans_light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp" />
+
+    <TextView
+        android:id="@+id/tvEnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="22sp"
+        android:layout_below="@id/tvRedactData"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tvEnterName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <TextView
+        android:id="@+id/tvEnterSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your surname"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="22sp"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tvEnterSurname"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <TextView
+        android:id="@+id/tvEnterSecondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your second name"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="22sp"
+        android:layout_below="@id/etSurname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etSecondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tvEnterSecondName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <TextView
+        android:id="@+id/tvEnterAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your address"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/inria_sans_light"
+        android:textSize="22sp"
+        android:layout_below="@id/etSecondName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        android:layout_below="@id/tvEnterAddress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:minHeight="60dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAddress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:padding="15dp"
+        android:text="Apply"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+</RelativeLayout>

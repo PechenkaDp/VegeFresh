@@ -1,0 +1,18 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@id/navigation_items">
+
+    <fragment
+        android:id="@+id/navigation_items"
+        android:name="com.example.vegefresh.ItemsFragment"
+        android:label="Items"
+        tools:layout="@layout/fragment_items" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.vegefresh.ProfFermFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile_ferm" />
+</navigation>

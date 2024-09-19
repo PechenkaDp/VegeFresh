@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VegeFresh</string>
+    <string name="welcome_register_or_log_in_to_access_the_best_marketplace_of_farm_products">Welcome, register or log in to access the best marketplace of farm products!</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="i_forgot_password">I forgot password</string>
+    <string name="logotype">Logotype</string>
+    <string name="title_activity_main_window">MainWindow</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main_window_ferm">MainWindowFerm</string>
+    <string name="title_cart" />
+    <string name="title_profile" />
+</resources>
